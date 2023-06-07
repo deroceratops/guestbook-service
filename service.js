@@ -2,7 +2,7 @@ import scid from "./scid.js";
 import fetch from "node-fetch-commonjs";
 
 var callCount = 0;
-const dstport = 3;
+const dstport = 4;
 
 const transfersData = JSON.stringify({
     "jsonrpc": "2.0",
