@@ -23,6 +23,10 @@ const getTransfers = async () => {
     })
     .then(res => res.json())
     .then(json => {
+        if (!json.result.entries) {
+            return;
+        };
+
         const entries = json.result.entries.filter((entry) => {
             return entry.dstport === dstport;
         });
