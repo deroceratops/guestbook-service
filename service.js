@@ -66,10 +66,10 @@ const callContract = async (amount) => {
         method: "POST",
         body: contractCallData,
         headers: {"Content-Type": "application/json"}
-    })
+    });
 }
 
 setInterval(
     getTransfers,
     2000
-)
+);
