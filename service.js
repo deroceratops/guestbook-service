@@ -1,5 +1,4 @@
 import scid from "./scid.js";
-
 import fetch from "node-fetch-commonjs";
 
 var callCount = 0;
